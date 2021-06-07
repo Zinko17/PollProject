@@ -1,0 +1,4 @@
+{% for polls in poll %}
+{{ polls.title }}
+<a href="{% url 'question' polls.id %}">Go</a><br>
+{% endfor %}
