@@ -1,0 +1,8 @@
+<form method="POST" action="">
+  {% for quest in question %}
+    {% csrf_token %}
+    {{quest.text}}
+    {{ form }}
+  {% endfor %}
+  <input type="submit">
+</form>
